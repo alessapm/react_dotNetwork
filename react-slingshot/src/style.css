@@ -1,0 +1,53 @@
+body {
+  margin-left: 20px;
+  margin-right: 20px;
+  background: url('http://www.krispygirl.com/wp-content/uploads/2016/08/blackdot-bgf.png');
+  background-size: 20%;
+}
+
+h1 {
+  background-color: white;
+  width: 320px;
+}
+
+label {
+  color: black;
+  font-size: 1.5rem;
+  background-color: white;
+}
+
+input {
+ letter-spacing: 1.5px;
+ font-size: 1.5em;
+background-color: white;
+
+}
+
+.person{
+  width: 350px;
+  height: 250px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 20px;
+}
+
+.add{
+  font-weight: bolder;
+  font-size: 1.5rem;
+ background-color: white;
+}
+
+#wrap{
+  display: flex;
+  justify-content: center;
+  /*border: 2px blue solid;*/
+}
+
+#forIteration{
+  /*border: 2px pink solid;*/
+  display: flex;
+  flex-wrap: wrap;
+  width: 790px;
+  /*justify-content: center;*/
+}
+

@@ -82,40 +82,44 @@ export default class EditPerson extends Component {
 render(){
   return(
     <div className="wrapper">
-      <nav>
-        <h1> dotNetwork</h1>
-        <Link to="/">Home</Link>
-      </nav>
+
+        <h1 className="blue-text text-darken-4"> dotNetwork</h1>
+        <Link to="/" className="add">Home</Link>
+
       <div className="contains-form">
         <form onSubmit={this.handleSubmit.bind(this)}>
           <label>First Name:</label>
           <input name="firstname"
           onChange={this.handleChange.bind(this)}
           value={this.state.person.firstname}
+          className="blue accent-1"
           type="text" /><br />
 
           <label>Last Name:</label>
           <input name="lastname"
           value={this.state.person.lastname}
+          className="blue accent-1"
           onChange={this.handleChange.bind(this)}
           type="text" /><br />
 
           <label>Email:</label>
           <input name="email"
+          className="blue accent-1"
           value={this.state.person.email}
           onChange={this.handleChange.bind(this)}
           type="text" /><br />
 
           <label>Username:</label>
           <input name="username"
+          className="blue accent-1"
           value={this.state.person.username}
           onChange={this.handleChange.bind(this)}
           type="text" /><br />
 
-          <button type="submit">Submit</button>
+          <button type="submit" className="blue darken-4 blue-text text-lighten-5 waves-effect waves-light btn">Submit</button><br /><br />
 
           <form onSubmit={this.deleteSubmit.bind(this)}>
-              <button type='submit'>Delete Contact</button>
+              <button type='submit' className="pink accent-4 blue-text text-lighten-5 waves-effect waves-light btn">Delete Contact</button>
           </form>
 
 

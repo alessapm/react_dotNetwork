@@ -33,15 +33,16 @@ render(){
 
   return (
     <div id="wrap">
-      <h2>Connections: </h2>
+
       <div id="forIteration">
         {this.state.people.map((person) => {
           return (
-            <div key={person.id}>
-              <h3>{person.firstname} {person.lastname}</h3>
+            <div key={person.id} className='person col s6 m6 l6 blue accent-1'>
+
+              <h3 className="blue-text text-lighten-5 blue accent-3">{person.firstname} {person.lastname}</h3>
               <p> {person.email} </p>
               <p> known as: {person.username}</p>
-              <button><Link to={`/people/${person.id}/edit`}>Edit</Link></button>
+              <button className="blue darken-4 blue-text text-lighten-5 waves-effect waves-light btn"><Link to={`/people/${person.id}/edit`}>Edit</Link></button>
 
 
             </div>

@@ -4,6 +4,11 @@ import React from "react";
 import ReactDom from "react-dom";
 import { Route, Router, browserHistory } from "react-router";
 
+import "./materialize/css/materialize.min.css";
+
+import "./style.css";
+
+
 
 import Homepage from "./components/Homepage/Homepage.js";
 import NewPerson from "./components/NewPerson/NewPerson.js";
