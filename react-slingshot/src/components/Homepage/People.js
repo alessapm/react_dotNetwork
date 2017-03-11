@@ -15,9 +15,9 @@ componentDidMount(){
     method: 'GET'
   })
   .then((results) => {
-    console.log('***results: ', results)
+    // console.log('***results: ', results)
     results.json().then((data) => {
-      console.log('data ', data);
+      // console.log('data ', data);
       this.setState({people: data})
     })
   })
