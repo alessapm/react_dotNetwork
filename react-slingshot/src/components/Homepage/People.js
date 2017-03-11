@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import update from "react-addons-update";
 
 export default class People extends Component {
   constructor(props){
     super(props);
 
     this.state = {
-      people: []
+      people: [],
+      id: 0
     }
   }
 
@@ -38,9 +40,12 @@ render(){
             <div key={person.id}>
               <h3>{person.firstname} {person.lastname}</h3>
               <p> {person.email} </p>
-              <p> known as: {person.username}</p><br />
+              <p> known as: {person.username}</p>
+              <button><Link to={`/people/${person.id}/edit`}>Edit</Link></button>
+
 
             </div>
+
           )
         })}
       </div>
